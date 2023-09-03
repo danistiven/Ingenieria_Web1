@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+    <head>   
+        <meta charset="utf-8">
+        <title> Inicio sesion </title>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ejemplo de formulario de acceso basado en HTML5 y CSS">
+        <meta name="keywords" content="login,formulariode acceso html">
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="../estilos/login.css">       
+        <script type="text/javascript" src="js/pass_validar.js"></script>
+    </head>  
+    <body>
+        <div id="contenedor">  
+            <div id="contenedorcentrado">
+                <div id="login">
+                    <form action="/signIn" method="POST">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <br>
+                        <input
+                            type="text"
+                            name="user_email"
+                            class="form-control mb-2"
+                            placeholder="bluuwebb@gmail.com"
+                        >
+                        <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+                        <br>
+                        <input
+                            type="password"
+                            name="user_password"
+                            class="form-control mb-2"
+                            placeholder="Contraseña"
+                        >
+                        <button type="submit" class="btn btn-primary w-100" >Iniciar sesión</button>
+                    </form>
+                </div>
+                <div id="derecho">
+                    <div  class="titulo">
+                        Bienvenidos a TOOLSITE
+                    </div>
+                    <hr>
+                    <div class="pie-form">
+                        <a href="registro.html">¿No tienes Cuenta? Registrate</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+    <head>   
+        <meta charset="utf-8">
+        <title>Registrarme</title>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ejemplo de formulario de acceso basado en HTML5 y CSS">
+        <meta name="keywords" content="login,formulariode acceso html">
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+        <!-- Link hacia el archivo de estilos css -->
+        <link rel="stylesheet" href="../estilos/login.css">  
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>  
+        <script type="text/javascript">
+            function validarPasswords(){
+          var pass = document.getElementById("contrasena").value;
+          var repass = document.getElementById("recontrasena").value;
+        
+            if (pass!=repass) 
+            {
+                alert("Las Contraseñas no Coinsiden");
+            }
+            else
+            {
+                document.getElementById("frm").submit();
+            }
+        }
+        </script> 
+    </head>  
+    <body>
+        <div id="contenedor">  
+            <div id="contenedorcentrado">
+                <div id="login">
+                    <form method="post" action="login.html">
+                        <label for="exampleFormControlInput1" class="form-label">Nombres</label>
+                        <br>
+                        <input
+                            type="text"
+                            name="client_name"
+                            id="client_name"
+                            class="form-control mb-2"
+                            placeholder="Nombres"
+                        >
+                        <label for="exampleFormControlInput1" class="form-label">Edad</label>
+                        <br>
+                        <input
+                            type="number"
+                            name="client_age"
+                            id="client_age"
+                            class="form-control mb-2"
+                            placeholder="16"
+                        >
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <br>
+                        <input
+                            type="text"
+                            name="client_email"
+                            id="client_email"
+                            class="form-control mb-2"
+                            placeholder="bluuwebb@test.com"
+                        >
+                        <label for="contrasena" class="form-label">Contraseña</label>
+                        <br>
+                        <input
+                            type="password"
+                            name="contrasena"
+                            id="contrasena"
+                            class="form-control mb-2"
+                            placeholder="Ingrese su contraseña..."
+                            required
+                        >
+                        <label for="recontrasena" class="form-label">Repita la contraseña</label>
+                        <br>
+                        <input
+                            type="password"
+                            name="recontrasena"
+                            id="recontrasena"
+                            class="form-control mb-2"
+                            placeholder="Confirme su contraseña..."
+                            required
+                        >
+                        <br>
+                    </form>
+                    <button type="submit" onsubmit="validarPasswords();" class="btn btn-primary w-100 my-3" id="btn_action"><a href="../views/login.html"></a> Registrarme</button>
+                </div>
+                <div id="derecho">
+                    <div class="titulo">
+                        Bienvenidos a TOOLSITE
+                    </div>
+                    <hr>
+                    <div class="pie-form">
+                        <a>¿Necesitas alquilar herramientas para tu empresa, hogar?</a>
+                        <a >Con TOOLSITE tienes acceso a las herramientas que necesitas.</a>
+                        <hr>
+                        <a href="login.html">Iniciar sesion</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </body>
+    <script src="../controllers/registro.js"></script>
+</html>
+

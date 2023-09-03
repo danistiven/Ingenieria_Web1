@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://file.myfontastic.com/FkmWtRYFe2i3qsnrRKU3qJ/icons.css" rel="hoja de estilo">
+    <link rel="stylesheet" href="../estilos/styles1.css">       
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <img  id="logo" src="../public/img/NavarToolsite.png">
+            <h4><span style="color:yellow">BIENVENIDOS</span><span style="color:rgb(241, 241, 241)"> A <span></span><span style="color:red">TOOLSITE<span></h4>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú TOOLSITE</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a href="../views/herramientas.html" class="icon-wrench" >Herramientas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="icon-calendar-check-o"  href="#">Hacer reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="icon-comments" href="#">Comentarios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="icon-user" href="usuarios.html">Usuarios</a>
+                  </li>
+              </ul>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <a href="login.html" type="button" class="btn btn-danger" >Cerrar sesión</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br><br><br><br><br>
+<div class="container" style="text-align: center;">
+<div class="alert alert-secondary" role="alert">
+  <div class="container" >
+ <h4 class="icon-comments">Comentarios Herramientas TOOLSITE</h4>
+ <!-- Button trigger modal -->
+ <button  type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Hacer comentario</button>
+ <!-- Modal -->
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h1 class="modal-title fs-5" id="staticBackdropLabel">Comentarios TOOLSITE</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+      
+           <form action="/signIn" method="POST">
+               <!-- <input type="hidden" name="_csrf" value="{{csrfToken}}"/> -->
+               <label for="exampleFormControlInput1" class="form-label"><strong>Herramienta</strong></label>
+               <select name="combo" class="form-control mb-2" >
+                   <!-- Opciones de la lista -->
+                   <option value="0" selected >Seleccione</option>
+                   <option value="1">Amoladora Angular 180 mm GWS 22-180</option>
+                   <option value="2" >Andamio 180cm X180cm</option> <!-- Opción por defecto -->
+                   <option value="3">Atornillador De Impacto Te-Ci18/1 Kit4Ah</option>
+                   <option value="4">Calibrador pie de rey</option>
+                   <option value="5">Juego destornilladores 7 piezas CC016</option>
+                   <option value="6">Combo Inversor más Careta</option>
+                   <option value="7">Compresor Aire Silenci Sn Aceite 580w24l</option>
+                   <option value="8">Juego Copas M3/8" 10-19Mm Stanley</option>
+                   <option value="9">Llave ajustable 6 pulgadas WA06VLM</option>
+                   <option value="10">Juego De 6 Llaves Tubulares Métricas De 6-22 Mm</option>
+                   <option value="11">Martillo Galponero 450G Man New Robust</option>
+                   <option value="12">Mezcladora de Concreto 210 Litros 850W</option>
+                   <option value="13">Motosierra Gasolina 45Cc Espada 18"-Industrial</option>
+                   <option value="14">Pistola de Clavos Calibre 18</option>
+                   <option value="15">Pistola Soplar Y Aspirar 600W 6000-16000Rpm</option>
+                   <option value="16">Pistola para Pintar W600 Control Spray 200</option>
+                   <option value="17">Prensa Banco Accion Rapida 2 Piezas 23Q2111</option>
+                   <option value="18">Probador Corriente 3.5/130mm 100-500V Set X 1200Unds</option>
+                   <option value="19">Remachadora Neumática 3/16-pulg Ubermann</option>
+                   <option value="20">Serrucho Teflón 18-pulg 450mm Ubermann</option>
+                   <option value="21">Set de Llaves 1/2 pulg 21Pzs MM&Pulg</option>
+                   <option value="22">Sierra Caladora 600W 0-3000 Opm Bauker</option>
+                   <option value="23">Taladro 3/8Pulg Percutor 20V 2Vel</option>
+                 </select>
+                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+           </form>
+       </div>
+       <div class="modal-footer">
+         <button type="submit" value="Guardar cambios" class="btn btn-warning" data-bs-dismiss="modal">Enviar</button>
+       </div>
+     </div>
+   </div>
+ </div>
+  </div>
+</div>
+</div>
+      <!-- Container card 1 -->
+<div class="container-1" style="text-align: center;">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Amoladora.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Amoladora Angular 180 mm GWS 22-180 Professional 2200w x127 v</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/andamio (1).jpg">
+                <h3>Andamio</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Andamio 180cm X180cm Capacidad Hasta 450kg</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Atornillador de impacto.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Atornillador De Impacto Te-Ci18/1 Kit4Ah</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+</div>
+<!-- Container card 2 -->
+<div class="container-1" style="text-align: center;">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Calibrador.jpeg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Calibrador pie de rey pulgada-centímetro escala 1/128 6 pulgadas 1042 C</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Combo_destornilladores.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Juego destornilladores 7 piezas CC016</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Combo_soldador_inversor.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Combo Inversor más Careta</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+</div>
+<!-- Container card 3 -->
+</div><div class="container-1" style="text-align: center;">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Compresor.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Compresor Aire Silenci Sn Aceite 580w24l</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Juego_de_copas.jpeg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Juego Copas M3/8" 10-19Mm Stanley</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Llave_ajustable.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Llave ajustable 6 pulgadas WA06VLM</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+</div>
+<!-- Container card 4 -->
+<div class="container-1" style="text-align: center;">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Llaves_tubulares.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Juego De 6 Llaves Tubulares Métricas De 6-22 Mm</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Martillo.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Martillo Galponero 450G Man New Robust</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Mezcladora_hormiguera.png">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Mezcladora de Concreto 210 Litros 850W</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <!-- Container card 5 -->
+<div class="container-1" style="text-align: center;">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Motosierra.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Motosierra Gasolina 45Cc Espada 18"-Industrial</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Pistola_de_clavos.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Pistola de Clavos Calibre 18</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Pistola_de_soplar.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Pistola Soplar Y Aspirar 600W 6000-16000Rpm</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+</div> 
+    <!-- Container card 6-->
+<div class="container-1" style="text-align: center;">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Pistola_para_pintar.jpeg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Pistola para Pintar W600 Control Spray 200</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Prensa_de_banco.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Prensa Banco Accion Rapida 2 Piezas 23Q2111</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Probador_de_corriente.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Probador Corriente 3.5/130mm 100-500V Set X 1200Unds</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- Container card 7 -->
+<div class="container-1" style="text-align: center;">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Remachadora.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Remachadora Neumática 3/16-pulg Ubermann</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Serrucho.webp">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Serrucho Teflón 18-pulg 450mm Ubermann</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Set_llaves.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Set de Llaves 1/2 pulg 21Pzs MM&Pulg</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+</div>
+<!-- Container card 8 -->
+<div class="container-1" style="text-align: center;">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Sierra_caladora.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Sierra Caladora 600W 0-3000 Opm Bauker</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Taladro.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Taladro 3/8Pulg Percutor 20V 2Vel</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="../public/img/Tranzadora.jpg">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h6><strong>Tronzadora 14-pulg 2300W 3800RPM</strong></h6>
+                <br>
+            </div>
+        </div>
+    </div> 
+</div> <br><br>
+<footer>
+  <h5 style="text-align:center;">Sebastian Alayon-Sofia Corredor-Daniel Bohorquez</h5>
+</footer>
+</body>
+</html>

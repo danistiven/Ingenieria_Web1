@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://file.myfontastic.com/FkmWtRYFe2i3qsnrRKU3qJ/icons.css" rel="hoja de estilo">
+    <link rel="stylesheet" href="../estilos/styles1.css">       
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <img  id="logo" src="../public/img/NavarToolsite.png">
+            <h4><span style="color:yellow">BIENVENIDOS</span><span style="color:rgb(241, 241, 241)"> A <span></span><span style="color:red">TOOLSITE<span></h4>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú TOOLSITE</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a href="../views/herramientas.html" class="icon-wrench" >Herramientas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="icon-calendar-check-o"  href="#">Hacer reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="icon-comments" href="#">Comentarios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="icon-user" href="#">Usuarios</a>
+                  </li>
+              </ul>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <a href="login.html" type="button" class="btn btn-danger" >Cerrar sesión</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+<br><br><br><br><br>
+<div class="container" style="text-align: center;">
+<div class="alert alert-secondary" role="alert">
+  <div class="container" >
+ <h4 class="icon-user">Tabla de usuarios TOOLSITE</h4>
+  </div>
+</div>
+</div>
+<div class="container" style="text-align: center;">
+    <table>
+      <tr>
+        <th>Nombres</th>
+        <th>Correo</th>
+        <th>Telefono</th>
+        <th>Direccion</th>
+        <th>Contraseña</th>
+        <th>Comentario</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td>Alfreds Futterkiste</td>
+        <td><button type="submit" class="btn btn-secondary">Editar</button>
+          <button type="submit" class="btn btn-dark">Eliminar</button></td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+        <td>Centro comercial Moctezuma</td>
+        <td><button type="submit" class="btn btn-secondary">Editar</button>
+          <button type="submit" class="btn btn-dark">Eliminar</button></td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+        <td>Ernst Handel</td>
+        <td><button type="submit" class="btn btn-secondary">Editar</button>
+          <button type="submit" class="btn btn-dark">Eliminar</button></td>
+      </tr>
+    </table>
+    </div>
+    <br><br>
+<footer>
+  <h5 style="text-align:center;">Sebastian Alayon-Sofia Corredor-Daniel Bohorquez</h5>
+</footer>
+</body>
+</html>
